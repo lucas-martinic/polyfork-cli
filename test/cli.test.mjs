@@ -158,6 +158,12 @@ test('the source module asks for an account, then works with one', async () => {
   assert.match(keyed.out, /createAsset/);
 });
 
+test('the key comes from POLYFORK_KEY, the name the agent guide uses', async () => {
+  const r = await run(['add', 'camper-van-111', '--format', 'mjs'], { env: { POLYFORK_KEY: KEY } });
+  assert.equal(r.code, 0);
+  assert.equal(seen.at(-1).auth, `Bearer ${KEY}`);
+});
+
 test('a kit needs an account and lands as one zip', async () => {
   assert.equal((await run(['add', '--kit', 'road-1'])).code, 3);
   assert.equal((await run(['add', '--kit', 'road-1'], { env: { POLYFORK_API_KEY: KEY } })).code, 0);

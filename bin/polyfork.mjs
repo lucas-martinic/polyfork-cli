@@ -57,7 +57,9 @@ const sleep = (s) => new Promise((r) => setTimeout(r, s * 1000));
 const configFile = () => join(process.env.XDG_CONFIG_HOME || join(homedir(), '.config'), 'polyfork', 'config.json');
 
 function savedKey() {
-  if (process.env.POLYFORK_API_KEY) return process.env.POLYFORK_API_KEY;
+  // POLYFORK_KEY is the name the site's own agent guide uses; the other is kept for 0.1.0.
+  const env = process.env.POLYFORK_KEY || process.env.POLYFORK_API_KEY;
+  if (env) return env;
   try { return JSON.parse(readFileSync(configFile(), 'utf8')).key || null; } catch { return null; }
 }
 

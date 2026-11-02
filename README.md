@@ -54,7 +54,7 @@ Each model's page lists its knobs.
 
 ## In scripts and agents
 
-Nothing waits for a person. If a name matches more than one model, `add` lists the ids and stops, so search first and add by id, or pass `--first`. Use `--json` for structured output, and set `POLYFORK_API_KEY` instead of running `login`. You can also pipe a key in: `polyfork login < key.txt`.
+Nothing waits for a person. If a name matches more than one model, `add` lists the ids and stops, so search first and add by id, or pass `--first`. Use `--json` for structured output, and set `POLYFORK_KEY` instead of running `login`. You can also pipe a key in: `polyfork login < key.txt`.
 
 | Exit code | Meaning |
 |---|---|

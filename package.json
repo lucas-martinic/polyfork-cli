@@ -1,6 +1,6 @@
 {
   "name": "polyfork",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Find a free low-poly 3D model and put it in your project. GLB or code you can change with knobs.",
   "type": "module",
   "bin": { "polyfork": "bin/polyfork.mjs" },
