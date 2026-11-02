@@ -1,0 +1,16 @@
+{
+  "name": "polyfork",
+  "version": "0.1.0",
+  "description": "Find a free low-poly 3D model and put it in your project. GLB or code you can change with knobs.",
+  "type": "module",
+  "bin": { "polyfork": "bin/polyfork.mjs" },
+  "files": ["bin", "README.md", "LICENSE"],
+  "engines": { "node": ">=18.3" },
+  "scripts": { "test": "node --test" },
+  "homepage": "https://polyfork.dev",
+  "repository": { "type": "git", "url": "git+https://github.com/lucas-martinic/polyfork-cli.git" },
+  "bugs": "https://polyfork.dev/support",
+  "author": "Lucas Martinic",
+  "license": "MIT",
+  "keywords": ["3d", "3d-models", "low-poly", "threejs", "three.js", "glb", "gltf", "game-assets", "gamedev", "webgl", "cli"]
+}
