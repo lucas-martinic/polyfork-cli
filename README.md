@@ -65,4 +65,4 @@ Nothing waits for a person. If a name matches more than one model, `add` lists t
 
 ## Licence
 
-This tool is MIT licensed. **The models are not**: they have their own [licence](https://polyfork.dev/licensing). They are free to use in personal and commercial projects, changed however you like, with no attribution. Please do not re-upload or redistribute the files themselves, which is why `add` takes one model or kit at a time.
+This tool is MIT licensed. **The models are not**: they have their own [licence](https://polyfork.dev/licensing). They are free to use in personal and commercial projects, changed however you like, with no attribution. The free models' mesh files (GLB, FBX, USD, OBJ) are also [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), so you may share them as long as each keeps its credit line; the `.mjs` source and the HD editions may not be redistributed.
